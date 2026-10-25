@@ -9,9 +9,9 @@
 
 Grab the APK from the latest release — no build needed, no store:
 
-**[ZirkioTerm-release.apk](https://github.com/giannizacchia/Zirkio-Term-Android/releases/latest)**
+**[ZirkioTerm-0.12.0-release.apk](https://github.com/giannizacchia/Zirkio-Term-Android/releases/latest)**
 
-`adb install -r ZirkioTerm-release.apk`, or open the file on the phone and allow
+`adb install -r ZirkioTerm-0.12.0-release.apk`, or open the file on the phone and allow
 installation from unknown sources. Requires Android 8 (API 26) or newer.
 The APK is signed with the debug key on purpose, so `adb install -r` upgrades in
 place instead of forcing an uninstall.
