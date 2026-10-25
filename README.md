@@ -1,7 +1,7 @@
 # Zirkio Term (Android)
 
 Client SSH per Android con un terminale vero, scritto in Kotlin con Jetpack
-Compose. Compagna mobile di [zirkio-term](https://github.com/giannizacchia/zirkio-term),
+Compose. Compagna mobile di [Zirkio-Term](https://github.com/giannizacchia/Zirkio-Term),
 il terminale GTK3 per Linux: qui l'interfaccia e' nativa Android, non un port.
 
 ## Cosa fa
