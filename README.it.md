@@ -58,10 +58,6 @@ Essendo compilata in anticipo da ART all'installazione, resta piu' fluida della
 build debug. Per distribuire su Play Store servirebbe una chiave di release
 vera, tenuta fuori dal repository.
 
-```bash
-./gradlew test    # test unitari in app/src/test
-```
-
 ## Struttura
 
 ```
@@ -72,7 +68,6 @@ app/src/main/java/org/zirkio/term/
   ssh/      collegamento sshj, trasferimenti SFTP, accesso, configurazione,
             installazione chiave, verifica, spegnimento
   ui/       schermate Compose (sessioni, chiavi, coda, barre, terminale)
-app/src/test/java/org/zirkio/term/   test unitari
 ```
 
 ## Versioni

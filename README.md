@@ -57,10 +57,6 @@ ahead-of-time compiled by ART at install time, it also stays smoother than a
 debug build. Shipping to the Play Store would need a real release key, kept
 outside the repository.
 
-```bash
-./gradlew test    # unit tests in app/src/test
-```
-
 ## Structure
 
 ```
@@ -71,7 +67,6 @@ app/src/main/java/org/zirkio/term/
   ssh/      sshj connection, SFTP transfers, access, configuration,
             key install, verification, shutdown
   ui/       Compose screens (sessions, keys, queue, bars, terminal)
-app/src/test/java/org/zirkio/term/   unit tests
 ```
 
 ## Versions
