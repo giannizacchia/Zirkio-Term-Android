@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Le cartelle che l'app puo' prestare alle altre app quando si apre un file. -->
+<paths>
+    <root-path name="radice" path="/" />
+    <external-path name="memoria" path="." />
+    <files-path name="app" path="." />
+</paths>

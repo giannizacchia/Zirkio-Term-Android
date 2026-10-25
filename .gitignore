@@ -1,0 +1,31 @@
+# Build Android e Gradle
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/app/build/
+/build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Pacchetti prodotti
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Chiavi di firma: mai nel repository
+*.jks
+*.keystore
+keystore.properties
+
+# IDE
+.idea/
+*.hprof
+
+# Sistema
+.DS_Store
+*~
+*.swp
