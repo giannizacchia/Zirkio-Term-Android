@@ -9,9 +9,9 @@
 
 Grab the APK from the latest release — no build needed, no store:
 
-**[ZirkioTerm-0.12.0-release.apk](https://github.com/giannizacchia/Zirkio-Term-Android/releases/latest)**
+**[ZirkioTerm-0.12.1-release.apk](https://github.com/giannizacchia/Zirkio-Term-Android/releases/latest)**
 
-`adb install -r ZirkioTerm-0.12.0-release.apk`, or open the file on the phone and allow
+`adb install -r ZirkioTerm-0.12.1-release.apk`, or open the file on the phone and allow
 installation from unknown sources. Requires Android 8 (API 26) or newer.
 The APK is signed with the debug key on purpose, so `adb install -r` upgrades in
 place instead of forcing an uninstall.
@@ -71,7 +71,7 @@ app/src/main/java/org/zirkio/term/
 
 ## Versions
 
-`versionName 0.12.0`, `versionCode 12` — AGP 8.7.3, Kotlin 2.0.21, Compose,
+`versionName 0.12.1`, `versionCode 13` — AGP 8.7.3, Kotlin 2.0.21, Compose,
 sshj 0.38.0 with BouncyCastle and eddsa for Ed25519 keys.
 
 ## Permissions
