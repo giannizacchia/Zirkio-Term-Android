@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -525,7 +526,7 @@ private fun App(archivio: ArchivioSessioni, collaudo: Boolean = false) {
                     )
                 },
                 bottomBar = {
-                    Column {
+                    Column(Modifier.navigationBarsPadding()) {
                         if (macchina != null) {
                             SchedaMacchina(macchina, onScegli = {
                                 scegliPer = "invia"
@@ -668,27 +669,29 @@ private fun App(archivio: ArchivioSessioni, collaudo: Boolean = false) {
                         )
                     },
                     bottomBar = {
-                        BarraAzioniFile(
-                            quanti = scelteRemoto.size,
-                            scegliendoDestinazione = spostando?.remoto == true,
-                            principaleDescrizione = "scarica qui",
-                            principaleIcona = ICONA_SCARICA,
-                            onPrincipale = { accodaScarica(scelteRemoto, vociRemoto, sessione, percorso) },
-                            onSposta = {
-                                if (scelteRemoto.isNotEmpty()) {
-                                    spostando = Spostamento(remoto = true, percorsi = scelteRemoto.toList())
-                                }
-                            },
-                            onElimina = {
-                                if (scelteRemoto.isNotEmpty()) {
-                                    cancellazioneRemota = true
-                                    daEliminare = vociRemoto.filter { scelteRemoto.contains(it.percorso) }
-                                }
-                            },
-                            onCartella = { cartellaNuova = true },
-                            onSpostaQui = { eseguiSpostamento(percorsoRemoto) },
-                            onAnnullaSpostamento = { spostando = null },
-                        )
+                        Column(Modifier.navigationBarsPadding()) {
+                            BarraAzioniFile(
+                                quanti = scelteRemoto.size,
+                                scegliendoDestinazione = spostando?.remoto == true,
+                                principaleDescrizione = "scarica qui",
+                                principaleIcona = ICONA_SCARICA,
+                                onPrincipale = { accodaScarica(scelteRemoto, vociRemoto, sessione, percorso) },
+                                onSposta = {
+                                    if (scelteRemoto.isNotEmpty()) {
+                                        spostando = Spostamento(remoto = true, percorsi = scelteRemoto.toList())
+                                    }
+                                },
+                                onElimina = {
+                                    if (scelteRemoto.isNotEmpty()) {
+                                        cancellazioneRemota = true
+                                        daEliminare = vociRemoto.filter { scelteRemoto.contains(it.percorso) }
+                                    }
+                                },
+                                onCartella = { cartellaNuova = true },
+                                onSpostaQui = { eseguiSpostamento(percorsoRemoto) },
+                                onAnnullaSpostamento = { spostando = null },
+                            )
+                        }
                     },
                 ) { riquadro ->
                     Column(Modifier.fillMaxSize().padding(riquadro)) {
